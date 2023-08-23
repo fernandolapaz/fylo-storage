@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Frontend Mentor Challenge">
+  <link rel="icon" type="image/png" sizes="32x32"
+    href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Fylo data storage component</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="main.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="box fylo">
+      <h1>
+        <img src="images/logo.svg"
+          alt="Fylo logo"
+          width="135"
+          height="40">
+      </h1>
+      <ul class="fylo__icons">
+        <li>
+          <button
+            type="button"
+            class="fylo__icon"
+            aria-label="Document">
+            <img src="images/icon-document.svg"
+              alt=""
+              width="20"
+              height="24">
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="fylo__icon"
+            aria-label="Folder">
+            <img src="images/icon-folder.svg"
+              alt=""
+              width="24"
+              height="20">
+          </button>
+        </li>
+        <li>
+          <button
+            type="button"
+            class="fylo__icon"
+            aria-label="Upload">
+            <img src="images/icon-upload.svg"
+              alt=""
+              width="24"
+              height="16">
+          </button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="box storage">
+      <p class="storage__desc">
+        You've used
+        <span id="used">815 GB</span>
+        of your storage
+      </p>
+      <div class="storage__bar">
+        <div class="storage__bar-used">
+          <div class="storage__bar-ball"></div>
+        </div>
+      </div>
+      <div class="storage__minmax" aria-hidden="true">
+        <p>0 GB</p>
+        <p>1000 GB</p>
+      </div>
+      <p class="storage__bubble">
+        <strong class="storage__remaining" id="remaining">185</strong>
+        <span class="storage__left">GB Left</span>
+      </p>
+    </div>
+  </main>
+
+  <footer class="attribution">
+    <button
+      type="button"
+      class="attr__btn"
+      title="Show attribution information"
+      aria-label="Show attribution information"
+      aria-expanded="false">
+      <img src="images/icon-attr.svg"
+        alt=""
+        width="32"
+        height="32">
+    </button>
+    <p class="attr__info">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">
+        Frontend Mentor.</a><br>
+      Coded by
+      <a href="https://www.frontendmentor.io/profile/fernandolapaz"
+        title="Fernando's Frontend Mentor profile"
+        aria-label="Fernando's Frontend Mentor profile">
+        Fernando.</a>
+    </p>
+  </footer>
+</body>
+
+</html>
